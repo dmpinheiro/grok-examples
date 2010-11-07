@@ -1,0 +1,12 @@
+Do a functional doctest test on the app.
+========================================
+
+:Test-Layer: functional
+
+Let's first create an instance of Example at the top level:
+
+   >>> from example.app import Example
+   >>> root = getRootFolder()
+   >>> root['app'] = Example()
+
+

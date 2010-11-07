@@ -1,0 +1,22 @@
+#!/Users/diego/.virtualenvs/grok/bin/python
+
+import sys
+sys.path[0:0] = [
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/opt/local/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages',
+    '/Users/diego/.buildout/eggs/zc.buildout-1.4.3-py2.6.egg',
+    ]
+
+
+import zc.buildout.buildout
+
+if __name__ == '__main__':
+    zc.buildout.buildout.main()

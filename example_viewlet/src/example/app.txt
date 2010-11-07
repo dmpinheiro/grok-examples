@@ -1,0 +1,15 @@
+:Test-Layer: functional
+
+
+   >>> from example.app import Example
+   >>> root = getRootFolder()
+   >>> root['app'] = Example()
+   >>> from zope.testbrowser.testing import Browser
+   >>> browser = Browser()
+   >>> browser.open('http://localhost/app')
+   >>> browser.url
+   'http://localhost/app'
+   >>> browser.headers.get('Status').upper()
+   '200 OK'
+   >>> browser.contents #doctest: +ELLIPSIS
+   '<html>\n<body>\n<div>Greetings!\nHello!</div>\n</body>\n</html>\n\n'

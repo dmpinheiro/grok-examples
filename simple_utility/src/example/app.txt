@@ -1,0 +1,18 @@
+:Test-Layer: functional
+
+   >>> from example.app import Example
+   >>> from example.interfaces import IDateUtility, IQuizUtility
+   >>> root = getRootFolder()
+   >>> root['app'] = Example()
+   >>> import zope.component
+   >>> date_utility = zope.component.getUtility(IDateUtility)
+   >>> date_utility.now().strftime('%d/%m/%Y')
+   '27/09/2010'
+   >>> quiz_utility = zope.component.getUtility(IQuizUtility, name="weather")
+   Traceback (most recent call last):
+   ...
+   ComponentLookupError: (<InterfaceClass example.interfaces.IQuizUtility>, 'weather')
+
+
+
+

@@ -1,0 +1,22 @@
+:Test-Layer: functional
+
+    >>> from example.app import Example
+    >>> from megrok import rdb
+    >>> root = getRootFolder()
+    >>> root['app'] = Example()
+    >>> from example.app import Curso, Departamento
+    >>> session = rdb.Session()
+    >>> filosofia = Departamento(nome="Filosofia")
+    >>> session.add(filosofia)
+    >>> logica = Curso(nome="Lógica")
+    >>> etica = Curso(nome="Ética")
+    >>> metafisica = Curso(nome="Metafísica")
+    >>> session.add_all([logica, etica, metafisica])
+    >>> filosofia.cursos.set(logica)
+    >>> filosofia.cursos.set(etica)
+    >>> filosofia.cursos.set(metafisica)
+    >>> for key, value in sorted(filosofia.cursos.items()):
+    ...     print key, value.nome, value.departmento.nome
+    1 Lógica Filosofia
+    2 Ética Filosofia
+    3 Metafísica Filosofia

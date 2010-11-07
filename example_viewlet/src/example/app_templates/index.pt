@@ -1,0 +1,6 @@
+<html>
+<body>
+<div tal:content="structure provider:example.main" />
+</body>
+</html>
+

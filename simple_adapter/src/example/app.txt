@@ -1,0 +1,22 @@
+:Test-Layer: functional
+
+   >>> from example.app import Macbook, NotebookHP, Projetor
+   >>> from example.app import plugar_laptop_em_um_projetor
+   >>> meu_notebook = Macbook()
+   >>> projetor_da_apresentacao = Projetor()
+   >>> plugar_laptop_em_um_projetor(meu_notebook,projetor_da_apresentacao)
+   Conectando na Porta MiniDVI em um Macbook.
+   Conectando o adaptador VGA.
+   >>> notebook_do_elesbom = NotebookHP()
+   >>> plugar_laptop_em_um_projetor(notebook_do_elesbom,projetor_da_apresentacao)
+   Conectando na porta VGA de um notebook HP.
+   >>> from zope.component import getAdapter,queryAdapter
+   >>> from example.interfaces import IPortaVGA
+   >>> adaptador = queryAdapter(meu_notebook,IPortaVGA)
+   >>> type(adaptador)
+   <class 'example.app.AdaptadorDVItoVGA'>
+   >>> outro_adaptador = getAdapter(notebook_do_elesbom,IPortaVGA)
+   Traceback (most recent call last):
+   ...
+   ComponentLookupError: (<example.app.NotebookHP object at ... <InterfaceClass example.interfaces.IPortaVGA>, u'')
+

@@ -1,0 +1,25 @@
+Do a functional doctest test on the app.
+========================================
+
+:Test-Layer: functional
+
+Let's first create an instance of Example at the top level:
+
+   >>> from example.app import Example,Grupo, Compania, Pessoa, Departamento
+   >>> root = getRootFolder()
+   >>> root['app']  = app = Example()
+   >>> app['pessoas']  = pessoas = Grupo()
+   >>> app['departamentos'] = iff = Compania()
+   >>> print iff.id, pessoas.id
+   None, None
+   >>> import transaction
+   >>> transaction.commit()
+   >>> print iff.id, pessoas.id
+   None, None
+   >>> nsi = Departamento()
+   >>> nsi.nome = "Núcleo de Pesquisa em Sistemas de Informação"
+   >>> iff['id'] = Com
+   >>> app['departamentos']
+   >>> pessoa = Pessoa()
+   >>> pessoa.nome = "Diego"
+   >>>

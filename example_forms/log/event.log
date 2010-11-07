@@ -1,0 +1,78 @@
+2010-08-25 07:33:30,252 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:34:16,411 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:34:56,993 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:35:11,985 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:35:32,434 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:36:01,752 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:36:27,612 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:37:09,480 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:49:41,705 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:50:01,610 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:52:40,343 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 07:53:07,119 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 08:08:46,406 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 08:09:25,326 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 08:09:49,544 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 08:10:26,559 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 08:11:16,045 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 08:11:49,984 WARNING [root] Developer mode is enabled: this is a security risk and should NOT be enabled on production servers. Developer mode can usually be turned off by setting the `devmode` option to `off` or by removing it from the instance configuration file completely.
+2010-08-25 08:11:52,968 WARNING [ZODB.blob] (3499) Blob dir /Users/diego/envs/grok-presentation/code_snippets/example_forms/var/blobstorage/ has insecure mode setting
+2010-08-25 08:11:52,971 INFO [zope.app.generations] main db: evolving in mode EVOLVEMINIMUM
+2010-08-25 08:12:21,587 ERROR [root] PageTemplateFile: Error in template /Users/diego/envs/grok-presentation/code_snippets/example_forms/src/example/app_templates/index.pt: Compilation failed
+<class 'zope.tal.taldefs.TALError'>: Invalid variable name "view.url('adicionar')" in expression u"view.url('adicionar')", at line 10, column 34
+2010-08-25 08:12:21,611 ERROR [root] PageTemplateFile: Error in template /Users/diego/envs/grok-presentation/code_snippets/example_forms/src/example/app_templates/index.pt: Compilation failed
+<class 'zope.tal.taldefs.TALError'>: Invalid variable name "view.url('adicionar')" in expression u"view.url('adicionar')", at line 10, column 34
+2010-08-25 08:12:21,613 ERROR [root] PageTemplateFile: Error in template /Users/diego/envs/grok-presentation/code_snippets/example_forms/src/example/app_templates/index.pt: Compilation failed
+<class 'zope.tal.taldefs.TALError'>: Invalid variable name "view.url('adicionar')" in expression u"view.url('adicionar')", at line 10, column 34
+2010-08-25 08:12:21,631 ERROR [SiteError] http://localhost:8080/teste123/@@index
+Traceback (most recent call last):
+  File "/Users/diego/.buildout/eggs/zope.publisher-3.12.3-py2.6.egg/zope/publisher/publish.py", line 134, in publish
+    result = publication.callObject(request, obj)
+  File "/Users/diego/.buildout/eggs/grok-1.1.1-py2.6.egg/grok/publication.py", line 89, in callObject
+    return super(ZopePublicationSansProxy, self).callObject(request, ob)
+  File "/Users/diego/.buildout/eggs/zope.app.publication-3.10.2-py2.6.egg/zope/app/publication/zopepublication.py", line 205, in callObject
+    return mapply(ob, request.getPositionalArguments(), request)
+  File "/Users/diego/.buildout/eggs/zope.publisher-3.12.3-py2.6.egg/zope/publisher/publish.py", line 109, in mapply
+    return debug_call(obj, args)
+  File "/Users/diego/.buildout/eggs/zope.publisher-3.12.3-py2.6.egg/zope/publisher/publish.py", line 115, in debug_call
+    return obj(*args)
+  File "/Users/diego/.buildout/eggs/grokcore.view-1.13.2-py2.6.egg/grokcore/view/components.py", line 100, in __call__
+    return self._render_template()
+  File "/Users/diego/.buildout/eggs/grokcore.view-1.13.2-py2.6.egg/grokcore/view/components.py", line 104, in _render_template
+    return self.template.render(self)
+  File "/Users/diego/.buildout/eggs/grokcore.view-1.13.2-py2.6.egg/grokcore/view/components.py", line 245, in render
+    return template.pt_render(namespace)
+  File "/Users/diego/.buildout/eggs/zope.pagetemplate-3.5.0-py2.6.egg/zope/pagetemplate/pagetemplate.py", line 109, in pt_render
+    raise PTRuntimeError(str(self._v_errors))
+PTRuntimeError: ['Compilation failed', '<class \'zope.tal.taldefs.TALError\'>: Invalid variable name "view.url(\'adicionar\')" in expression u"view.url(\'adicionar\')", at line 10, column 34']
+2010-08-25 08:12:37,190 ERROR [root] PageTemplateFile: Error in template /Users/diego/envs/grok-presentation/code_snippets/example_forms/src/example/app_templates/index.pt: Compilation failed
+<class 'zope.tal.taldefs.TALError'>: Invalid variable name "view.url('adicionar')" in expression u"view.url('adicionar')", at line 10, column 34
+2010-08-25 08:12:37,192 ERROR [root] PageTemplateFile: Error in template /Users/diego/envs/grok-presentation/code_snippets/example_forms/src/example/app_templates/index.pt: Compilation failed
+<class 'zope.tal.taldefs.TALError'>: Invalid variable name "view.url('adicionar')" in expression u"view.url('adicionar')", at line 10, column 34
+2010-08-25 08:12:37,194 ERROR [root] PageTemplateFile: Error in template /Users/diego/envs/grok-presentation/code_snippets/example_forms/src/example/app_templates/index.pt: Compilation failed
+<class 'zope.tal.taldefs.TALError'>: Invalid variable name "view.url('adicionar')" in expression u"view.url('adicionar')", at line 10, column 34
+2010-08-25 08:12:37,196 ERROR [SiteError] http://localhost:8080/teste123/@@index
+Traceback (most recent call last):
+  File "/Users/diego/.buildout/eggs/zope.publisher-3.12.3-py2.6.egg/zope/publisher/publish.py", line 134, in publish
+    result = publication.callObject(request, obj)
+  File "/Users/diego/.buildout/eggs/grok-1.1.1-py2.6.egg/grok/publication.py", line 89, in callObject
+    return super(ZopePublicationSansProxy, self).callObject(request, ob)
+  File "/Users/diego/.buildout/eggs/zope.app.publication-3.10.2-py2.6.egg/zope/app/publication/zopepublication.py", line 205, in callObject
+    return mapply(ob, request.getPositionalArguments(), request)
+  File "/Users/diego/.buildout/eggs/zope.publisher-3.12.3-py2.6.egg/zope/publisher/publish.py", line 109, in mapply
+    return debug_call(obj, args)
+  File "/Users/diego/.buildout/eggs/zope.publisher-3.12.3-py2.6.egg/zope/publisher/publish.py", line 115, in debug_call
+    return obj(*args)
+  File "/Users/diego/.buildout/eggs/grokcore.view-1.13.2-py2.6.egg/grokcore/view/components.py", line 100, in __call__
+    return self._render_template()
+  File "/Users/diego/.buildout/eggs/grokcore.view-1.13.2-py2.6.egg/grokcore/view/components.py", line 104, in _render_template
+    return self.template.render(self)
+  File "/Users/diego/.buildout/eggs/grokcore.view-1.13.2-py2.6.egg/grokcore/view/components.py", line 245, in render
+    return template.pt_render(namespace)
+  File "/Users/diego/.buildout/eggs/zope.pagetemplate-3.5.0-py2.6.egg/zope/pagetemplate/pagetemplate.py", line 109, in pt_render
+    raise PTRuntimeError(str(self._v_errors))
+PTRuntimeError: ['Compilation failed', '<class \'zope.tal.taldefs.TALError\'>: Invalid variable name "view.url(\'adicionar\')" in expression u"view.url(\'adicionar\')", at line 10, column 34']
+2010-08-25 08:12:42,846 INFO [paste.httpserver.ThreadPool] Shutting down threadpool
+2010-08-25 08:12:42,849 INFO [paste.httpserver.ThreadPool] All workers stopped
+2010-08-25 08:12:42,849 INFO [paste.httpserver.ThreadPool] Shutting down threadpool
+2010-08-25 08:12:42,849 INFO [paste.httpserver.ThreadPool] All workers stopped

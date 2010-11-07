@@ -1,0 +1,20 @@
+:Test-Layer: functional
+
+    >>> from example.app import Example, Content
+    >>> root = getRootFolder()
+    >>> root['app'] = app = Example()
+    >>> first_content = Content()
+    >>> app['first'] = first_content
+    >>> app['second'] = Content()
+    >>> list(app.keys())
+    [u'first', u'second']
+    >>> list(app.values()) #doctest: +ELLIPSIS
+    [<example.app.Content object at ... >, <example.app.Content object at ... >]
+    >>> app.has_key(2)
+    True
+    >>> app.items()
+    [('first',<>),(2,<>)]
+    >>> len(app)
+    2
+    >>> app.get('first')
+    <>

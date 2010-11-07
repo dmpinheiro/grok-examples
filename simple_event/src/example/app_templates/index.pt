@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+  <h1>Congratulations!</h1>
+
+  <p>Your Grok application is up and running.
+  Edit <code>example/app_templates/index.pt</code> to change
+  this page.</p>
+
+  <p tal:content=" here/conteudo">Conteudo é substituid pelo criado durante a inicialização</p>
+</body>
+</html>

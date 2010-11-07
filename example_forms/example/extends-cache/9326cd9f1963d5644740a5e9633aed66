@@ -1,0 +1,185 @@
+# Copyright (c) 2009 Zope Foundation and Contributors.
+#
+# This is the specification file for the transitional zope.app.* packages
+
+[zopeapp]
+included =
+  zope.app.apidoc
+  zope.app.applicationcontrol
+  zope.app.appsetup
+  zope.app.authentication
+  zope.app.basicskin
+  zope.app.broken
+  zope.app.cache
+  zope.app.catalog
+  zope.app.component
+  zope.app.container
+  zope.app.content
+  zope.app.dav
+  zope.app.debug
+  zope.app.dependable
+  zope.app.error
+  zope.app.exception
+  zope.app.file
+  zope.app.folder
+  zope.app.form
+  zope.app.ftp
+  zope.app.generations
+  zope.app.http
+  zope.app.i18n
+  zope.app.interface
+  zope.app.interpreter
+  zope.app.intid
+  zope.app.keyreference
+  zope.app.locales
+  zope.app.localpermission
+  zope.app.locking
+  zope.app.onlinehelp
+  zope.app.pagetemplate
+  zope.app.preference
+  zope.app.preview
+  zope.app.principalannotation
+  zope.app.publication
+  zope.app.publisher
+  zope.app.renderer
+  zope.app.rotterdam
+  zope.app.schema
+  zope.app.security
+  zope.app.securitypolicy
+  zope.app.server
+  zope.app.session
+#  zope.app.skins
+  zope.app.testing
+  zope.app.tree
+  zope.app.twisted
+  zope.app.undo
+  zope.app.wsgi
+  zope.app.zcmlfiles
+  zope.app.zopeappgenerations
+  zope.app.zptpage
+
+packages = ${zopeapp:included}
+
+[buildout]
+versions = versions
+
+[versions]
+zope.app.apidoc = 3.7.1
+zope.app.applicationcontrol = 3.5.5
+zope.app.appsetup = 3.13.0
+zope.app.authentication = 3.7.1
+zope.app.basicskin = 3.5.0
+zope.app.broken = 3.5.0
+zope.app.cache = 3.7.0
+zope.app.catalog = 3.8.1
+zope.app.component = 3.8.4
+zope.app.container = 3.8.2
+zope.app.content = 3.4.0
+zope.app.dav = 3.5.2
+zope.app.debug = 3.4.1
+zope.app.dependable = 3.5.1
+zope.app.error = 3.5.2
+zope.app.exception = 3.6.1
+zope.app.file = 3.5.1
+zope.app.folder = 3.5.1
+zope.app.form = 4.0.1
+zope.app.ftp = 3.5.0
+zope.app.generations = 3.5.1
+zope.app.http = 3.6.1
+zope.app.i18n = 3.6.2
+zope.app.interface = 3.5.0
+zope.app.interpreter = 3.4.0
+zope.app.intid = 3.7.1
+zope.app.keyreference = 3.6.0
+zope.app.locales = 3.6.0
+zope.app.localpermission = 3.7.0
+zope.app.locking = 3.5.0
+zope.app.onlinehelp = 3.5.2
+zope.app.pagetemplate = 3.10.1
+zope.app.preference = 3.6.0
+zope.app.preview = 3.4.0
+zope.app.principalannotation = 3.7.0
+zope.app.publication = 3.10.2
+zope.app.publisher = 3.10.1
+zope.app.renderer = 3.5.1
+zope.app.rotterdam = 3.5.1
+zope.app.schema = 3.5.0
+zope.app.security = 3.7.5
+zope.app.securitypolicy = 3.5.2
+zope.app.server = 3.5.0
+zope.app.session = 3.6.1
+zope.app.skins = 3.4.0
+zope.app.testing = 3.7.4
+zope.app.tree = 3.6.0
+zope.app.twisted = 3.5.0
+zope.app.undo = 3.5.0
+zope.app.wsgi = 3.6.1
+zope.app.zcmlfiles = 3.7.0
+zope.app.zopeappgenerations = 3.5.0
+zope.app.zptpage = 3.5.1
+
+# Dependencies:
+
+roman = 1.4.0
+zc.sourcefactory = 0.6.0
+zodbcode = 3.4.0
+zope.thread = 3.4
+
+# Not a dependency:
+
+zope.rdb = 3.5.0
+
+[sources]
+zope.app.apidoc = svn svn+ssh://svn.zope.org/repos/main/zope.app.apidoc/trunk
+zope.app.applicationcontrol = svn svn+ssh://svn.zope.org/repos/main/zope.app.applicationcontrol/trunk
+zope.app.appsetup = svn svn+ssh://svn.zope.org/repos/main/zope.app.appsetup/trunk
+zope.app.authentication = svn svn+ssh://svn.zope.org/repos/main/zope.app.authentication/trunk
+zope.app.basicskin = svn svn+ssh://svn.zope.org/repos/main/zope.app.basicskin/trunk
+zope.app.broken = svn svn+ssh://svn.zope.org/repos/main/zope.app.broken/trunk
+zope.app.cache = svn svn+ssh://svn.zope.org/repos/main/zope.app.cache/trunk
+zope.app.catalog = svn svn+ssh://svn.zope.org/repos/main/zope.app.catalog/trunk
+zope.app.component = svn svn+ssh://svn.zope.org/repos/main/zope.app.component/trunk
+zope.app.container = svn svn+ssh://svn.zope.org/repos/main/zope.app.container/trunk
+zope.app.content = svn svn+ssh://svn.zope.org/repos/main/zope.app.content/trunk
+zope.app.dav = svn svn+ssh://svn.zope.org/repos/main/zope.app.dav/trunk
+zope.app.debug = svn svn+ssh://svn.zope.org/repos/main/zope.app.debug/trunk
+zope.app.dependable = svn svn+ssh://svn.zope.org/repos/main/zope.app.dependable/trunk
+zope.app.error = svn svn+ssh://svn.zope.org/repos/main/zope.app.error/trunk
+zope.app.exception = svn svn+ssh://svn.zope.org/repos/main/zope.app.exception/trunk
+zope.app.file = svn svn+ssh://svn.zope.org/repos/main/zope.app.file/trunk
+zope.app.folder = svn svn+ssh://svn.zope.org/repos/main/zope.app.folder/trunk
+zope.app.form = svn svn+ssh://svn.zope.org/repos/main/zope.app.form/trunk
+zope.app.ftp = svn svn+ssh://svn.zope.org/repos/main/zope.app.ftp/trunk
+zope.app.generations = svn svn+ssh://svn.zope.org/repos/main/zope.app.generations/trunk
+zope.app.http = svn svn+ssh://svn.zope.org/repos/main/zope.app.http/trunk
+zope.app.i18n = svn svn+ssh://svn.zope.org/repos/main/zope.app.i18n/trunk
+zope.app.interface = svn svn+ssh://svn.zope.org/repos/main/zope.app.interface/trunk
+zope.app.interpreter = svn svn+ssh://svn.zope.org/repos/main/zope.app.interpreter/trunk
+zope.app.intid = svn svn+ssh://svn.zope.org/repos/main/zope.app.intid/trunk
+zope.app.keyreference = svn svn+ssh://svn.zope.org/repos/main/zope.app.keyreference/trunk
+zope.app.locales = svn svn+ssh://svn.zope.org/repos/main/zope.app.locales/trunk
+zope.app.localpermission = svn svn+ssh://svn.zope.org/repos/main/zope.app.localpermission/trunk
+zope.app.locking = svn svn+ssh://svn.zope.org/repos/main/zope.app.locking/trunk
+zope.app.onlinehelp = svn svn+ssh://svn.zope.org/repos/main/zope.app.onlinehelp/trunk
+zope.app.pagetemplate = svn svn+ssh://svn.zope.org/repos/main/zope.app.pagetemplate/trunk
+zope.app.preference = svn svn+ssh://svn.zope.org/repos/main/zope.app.preference/trunk
+zope.app.preview = svn svn+ssh://svn.zope.org/repos/main/zope.app.preview/trunk
+zope.app.principalannotation = svn svn+ssh://svn.zope.org/repos/main/zope.app.principalannotation/trunk
+zope.app.publication = svn svn+ssh://svn.zope.org/repos/main/zope.app.publication/trunk
+zope.app.publisher = svn svn+ssh://svn.zope.org/repos/main/zope.app.publisher/trunk
+zope.app.renderer = svn svn+ssh://svn.zope.org/repos/main/zope.app.renderer/trunk
+zope.app.rotterdam = svn svn+ssh://svn.zope.org/repos/main/zope.app.rotterdam/trunk
+zope.app.schema = svn svn+ssh://svn.zope.org/repos/main/zope.app.schema/trunk
+zope.app.security = svn svn+ssh://svn.zope.org/repos/main/zope.app.security/trunk
+zope.app.securitypolicy = svn svn+ssh://svn.zope.org/repos/main/zope.app.securitypolicy/trunk
+zope.app.server = svn svn+ssh://svn.zope.org/repos/main/zope.app.server/trunk
+zope.app.session = svn svn+ssh://svn.zope.org/repos/main/zope.app.session/trunk
+zope.app.skins = svn svn+ssh://svn.zope.org/repos/main/zope.app.skins/trunk
+zope.app.testing = svn svn+ssh://svn.zope.org/repos/main/zope.app.testing/trunk
+zope.app.tree = svn svn+ssh://svn.zope.org/repos/main/zope.app.tree/trunk
+zope.app.twisted = svn svn+ssh://svn.zope.org/repos/main/zope.app.twisted/trunk
+zope.app.undo = svn svn+ssh://svn.zope.org/repos/main/zope.app.undo/trunk
+zope.app.wsgi = svn svn+ssh://svn.zope.org/repos/main/zope.app.wsgi/trunk
+zope.app.zcmlfiles = svn svn+ssh://svn.zope.org/repos/main/zope.app.zcmlfiles/trunk
+zope.app.zopeappgenerations = svn svn+ssh://svn.zope.org/repos/main/zope.app.zopeappgenerations/trunk
+zope.app.zptpage = svn svn+ssh://svn.zope.org/repos/main/zope.app.zptpage/trunk

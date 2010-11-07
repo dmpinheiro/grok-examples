@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+  <h1>Congratulations!</h1>
+
+  <p>Your Grok application is up and running.
+  Edit <code>example/app_templates/index.pt</code> to change
+  this page.</p>
+  <p>Click Here to add a person: <a href="adicionar" tal:attributes="href
+      python: view.url('adicionar')">Adicionar</a></p>
+  <p tal:repeat="person_name view/list_of_persons">
+  <a href="bla" tal:attributes="href python:view.url(person_name) " tal:content="person_name">
+    Blablabla.
+  </a>
+  </p>
+</body>
+</html>
