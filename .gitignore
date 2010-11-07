@@ -1,0 +1,9 @@
+.installed.cfg
+bin
+var/*
+parts
+develop-eggs
+eggs
+extends-cache
+log
+*.egg-info
